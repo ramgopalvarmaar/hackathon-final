@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@argonjs/argon": "^1.4.0-36",
+    "@types/dat-gui": "^0.5.28",
+    "@types/googlemaps": "^3.20.30",
+    "@types/stats": "^0.16.29",
+    "@types/three": "^0.83.5",
+    "@types/tween.js": "0.0.27",
+    "express": "^4.15.2",
+    "pem": "^1.9.4",
+    "typescript": "^2.1.4"
+  },
+  "scripts": {
+    "serve": "npm start",
+    "devsite": "jekyll build --config _config-develop.yml",
+    "build": "tsc -p code/SingleObject && tsc -p code/MarkerBasedTracking && tsc -p code/DraggableObjects",
+    "distsite": "jekyll build --config _config-master.yml"
+  },
+  "dependencies": {
+    "@argonjs/argon": "^1.4.0-0"
+  }
+}
